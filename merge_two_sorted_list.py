@@ -25,3 +25,7 @@ print("Case 1", mergeTwoLists(test1_list1, test1_list2))
 test2_list1 = [1,1]
 test2_list2 = [0,2]
 print("Case 2", mergeTwoLists(test2_list1, test2_list2))
+
+test3_list1 = []
+test3_list2 = []
+print("Case 3", mergeTwoLists(test2_list1, test2_list2))
