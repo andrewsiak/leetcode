@@ -18,3 +18,10 @@ def mergeTwoLists(list1, list2):
         list2.leftpop
             
 
+test1_list1 = [1,3,5]
+test1_list2 = [2,4,6]
+print("Case 1", mergeTwoLists(test1_list1, test1_list2))
+
+test2_list1 = [1,1]
+test2_list2 = [0,2]
+print("Case 2", mergeTwoLists(test2_list1, test2_list2))
