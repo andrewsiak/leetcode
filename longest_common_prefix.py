@@ -3,6 +3,7 @@ def longestCommonPrefix(strs):
     prefix = []
     prefix = "test"
 # iterate through list of strings, and compare to index 0 of each string in list until end of list
+#   or compare first of each string, if same return true, else end loop
 # if letter matches in all stringssave to a variable "prefix"
 # else if letter does not match, end loop
     return prefix
