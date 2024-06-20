@@ -1,17 +1,29 @@
 def isPalindrome(x):
     # create empty string variable
-    base_string = ''
+    x_string = str(x)
     #loop through string
-    for i in x:
+    for i in x_string:
         if i.isalnum():
-            base_string += i.lower()
-    if base_string != base_string[::-1]:
+            x_string += i.lower()
+    if x_string != x_string[::-1]:
         return False
     else:
         return True
 
 
 
+
+test_case_one = 121
+print("Case 1", isPalindrome(test_case_one))
+
+test_case_two = -121
+print("Case 2", isPalindrome(test_case_two))
+
+test_case_three = 10
+print("Case 3", isPalindrome(test_case_three))
+
+test_case_four = 121121
+print("Case 4", isPalindrome(test_case_four))
 
 # below are notes from hackbright course instructor solution:
     # convert int to str 
