@@ -10,12 +10,16 @@ def mergeTwoLists(list1, list2):
     new_list = []
     if list1 == [] and list2 == []:
         return new_list
-    if list1[0] <= list2[0]:
-        new_list.append(list1[0])
-        list1.leftpop()
-    else:
-        new_list.append(list2[0])
-        list2.leftpop
+    if list1 == [] and list2 != []:
+        return list2
+    while list1 and list2:
+        if list1[0] <= list2[0]:
+            new_list.append(list1[0])
+            list1.pop(0)
+        else:
+            new_list.append(list2[0])
+            list2.pop(0)
+        
             
 
 test1_list1 = [1,3,5]
@@ -27,5 +31,5 @@ test2_list2 = [0,2]
 print("Case 2", mergeTwoLists(test2_list1, test2_list2))
 
 test3_list1 = []
-test3_list2 = []
-print("Case 3", mergeTwoLists(test2_list1, test2_list2))
+test3_list2 = [1]
+print("Case 3", mergeTwoLists(test3_list1, test3_list2))
