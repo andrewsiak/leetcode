@@ -14,16 +14,19 @@ def isPalindrome(x):
 
 
 test_case_one = 121
-print("Case 1", isPalindrome(test_case_one))
+print("Case 1 :", isPalindrome(test_case_one))
 
 test_case_two = -121
-print("Case 2", isPalindrome(test_case_two))
+print("Case 2 :", isPalindrome(test_case_two))
 
 test_case_three = 10
-print("Case 3", isPalindrome(test_case_three))
+print("Case 3 :", isPalindrome(test_case_three))
 
 test_case_four = 121121
-print("Case 4", isPalindrome(test_case_four))
+print("Case 4 :", isPalindrome(test_case_four))
+
+test_case_five = 123454321
+print("Case 5 :", isPalindrome(test_case_five))
 
 # below are notes from hackbright course instructor solution:
     # convert int to str 
