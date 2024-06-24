@@ -8,9 +8,8 @@ def longestCommonPrefix(strs):
             # this is incorrect, placeholder for now
             return prefix_result
         prefix_result += strs[0][i]
-        return prefix_result
+    return prefix_result
     
-    # currently returns only "f"
     
 
 # iterate through list of strings, and compare to index 0 of each string in list until end of list
