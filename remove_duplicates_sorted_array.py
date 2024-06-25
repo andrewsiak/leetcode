@@ -7,6 +7,15 @@ def removeDuplicates(nums):
     return position+1
 
 
+    # solution by creating array of unique nums
+    # result = []
+    # for i in nums:
+    #     if i not in result:
+    #         result.append(i)
+    #         print(result)
+    # return len(result)
+
+
 test_1 = [1,1,2]
 print(removeDuplicates(test_1))
 
