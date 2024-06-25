@@ -1,6 +1,17 @@
 def removeDuplicates(nums):
-    result = []
-    for i, j in enumerate(nums):
-        if i != j:
-            result.append(i)
-    return result
+    position = 0
+    for i, j in enumerate(nums[1:],1):
+        if nums[i-1] != j:
+            position += 1
+            nums[position] = j
+    return position+1
+
+
+test_1 = [1,1,2]
+print(removeDuplicates(test_1))
+
+test_2 = [0,0,1,1,1,2,2,3,3,4]
+print(removeDuplicates(test_2))
+
+test_3 = [1,1,3,3,5,5]
+print(removeDuplicates(test_3))
