@@ -1,6 +1,6 @@
 def isValid(s):
     # create dict of key value of matching open/close brackets
-    result = 0
+    bracket_tracker = []
     bracket_dict = {
         "(": ")",
         "{": "}",
@@ -12,10 +12,11 @@ def isValid(s):
     for i in s:
     # find matching key: value to index at end if true 
         if i in bracket_dict:
-            result += 1
+            bracket_tracker.append(i)
+            #compare to tracker and if found .pop
         
-            if result == 0:
-                print(result)
+            if len(bracket_tracker) == 0:
+                print(bracket_tracker)
                 return True
       
             
