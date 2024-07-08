@@ -1,10 +1,12 @@
 def isValid(s):
     # create dict of key value of matching open/close brackets
-    bracket_tracker = []
+    bracket_stack = []
     bracket_dict = {
         "(": ")",
         "{": "}",
-        "[": "]"}
+        "[": "]"
+        }
+
         
         
     # loop through string 
@@ -12,12 +14,20 @@ def isValid(s):
     for i in s:
     # find matching key: value to index at end if true 
         if i in bracket_dict:
-            bracket_tracker.append(i)
-            #compare to tracker and if found .pop
+            bracket_stack.append(i)
+            print("append", bracket_stack)
+
+        #compare to tracker and if found .pop
+
+        elif not bracket_stack or bracket_dict[bracket_stack.pop()] != i: 
+            print("pop", bracket_stack)
+
+            return False
+    return not bracket_stack
         
-            if len(bracket_tracker) == 0:
-                print(bracket_tracker)
-                return True
+            # if len(bracket_stack) == 0:
+            #     return False
+        
       
             
          # parenthesis = 0
