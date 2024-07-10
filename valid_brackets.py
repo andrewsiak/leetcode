@@ -19,7 +19,7 @@ def isValid(s):
 
         #compare to tracker and if found .pop
 
-        elif not bracket_stack or bracket_dict[bracket_stack.pop()] != i: 
+        elif bracket_dict[bracket_stack.pop()] != i: 
             print("pop", bracket_stack)
 
             return False
