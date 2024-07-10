@@ -15,12 +15,12 @@ def isValid(s):
     # find matching key: value to index at end if true 
         if i in bracket_dict:
             bracket_stack.append(i)
-            print("append", bracket_stack)
+            # print("append", bracket_stack)
 
         #compare to tracker and if found .pop
 
-        elif bracket_dict[bracket_stack.pop()] != i: 
-            print("pop", bracket_stack)
+        elif not bracket_stack or bracket_dict[bracket_stack.pop()] != i: 
+            # print("pop", bracket_stack)
 
             return False
     return not bracket_stack
@@ -56,3 +56,6 @@ print("Case 2:", isValid(test_2))
 
 test_3 = "(]"
 print("Case 3:", isValid(test_3))
+
+test_4 = "33"
+print("Case 4:", isValid(test_4)) 
