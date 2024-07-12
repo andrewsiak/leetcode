@@ -2,17 +2,16 @@ def lengthOfLastWord(s):
 
     """This works, but did not achieve my goal of stripping all whitespace and is not very efficient"""
 
-    # remove whitespace and tokenize string
-    # wordList = wordList.split(" ")
-    # wordList = wordList.strip(" ")
+    # remove whitespace and tokenize string, originally used strip and split(" ") incorrectly
+
     wordList = s.split()
     print(wordList)
 
     # find last item in string, position [-1]
-    lastWord = wordList[-1]
+    # lastWord = wordList[-1]
 
-    # return length of the word
-    return len(lastWord)
+    # return length of the last word, didnt need separate variable
+    return len(wordList[-1])
   
 
 
