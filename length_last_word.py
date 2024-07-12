@@ -5,7 +5,7 @@ def lengthOfLastWord(s):
     # remove whitespace and tokenize string
     # wordList = wordList.split(" ")
     # wordList = wordList.strip(" ")
-    wordList = s.strip().split(" ")
+    wordList = s.split()
     print(wordList)
 
     # find last item in string, position [-1]
@@ -13,6 +13,7 @@ def lengthOfLastWord(s):
 
     # return length of the word
     return len(lastWord)
+  
 
 
 
