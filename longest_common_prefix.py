@@ -1,7 +1,9 @@
 def longestCommonPrefix(strs):
 # find letter at index 0 of index 0 str
     prefix_result = ""
-
+    
+    if not strs:
+        return prefix_result
     for i in range(len(strs)):
         if strs[0][i] != strs[-1][i]:
             
@@ -9,7 +11,7 @@ def longestCommonPrefix(strs):
             return prefix_result
         prefix_result += strs[0][i]
     return prefix_result
-    
+        
     
 
 # iterate through list of strings, and compare to index 0 of each string in list until end of list
