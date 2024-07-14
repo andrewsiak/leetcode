@@ -18,4 +18,7 @@ def longestCommonPrefix(strs):
 # else if letter does not match, end loop
 
 test_case_one = ["flower", "flow", "flight"]
-print(longestCommonPrefix(test_case_one))
+print("test 1", longestCommonPrefix(test_case_one))
+
+test_case_two = ["dog","racecar","car"]
+print("test 2", longestCommonPrefix(test_case_two))
