@@ -1,15 +1,19 @@
 def plusOne(digits):
     # find digit at last position 
-    for i in digits[::-1]:
-    # if anything but 9 +1
-        if i <9:
-            i += 1
-        elif i == 9:
-            i = 0
     # else = 0, and iterate in reverse using reversed()?
+    # original solution below iterates through values instead of indicies
+    # for i in digits[::-1]: 
+    n = len(digits)
+    for i in range(n-1, -1, -1):
+        if digits[i] < 9:
+            digits[i] += 1
+            return digits
+        digits[i] = 0
+        return [1] + digits
+    # if anything but 9 +1
+        
     # and apply same rule 
     # if 9 is found at position [0] then .insert() "1" at position [0]
-    return 
 
 test_case_1 = [1,2,3]
 test_case_2 = [4,3,2,1]
