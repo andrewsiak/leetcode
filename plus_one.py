@@ -22,3 +22,11 @@ test_case_3 = [9]
 print("Test 1:", plusOne(test_case_1))
 print("Test 2:", plusOne(test_case_2))
 print("Test 3:", plusOne(test_case_3))
+
+def plusOnezo(digits):
+    for i in range(len(digits)-1, -1, -1):
+        if digits[i] < 9:
+            digits[i] += 1
+            return digits
+        digits[i] = 0
+        return [1] + digits

@@ -3,7 +3,8 @@ def longestCommonPrefix(strs):
     prefix_result = ""
     
     if not strs:
-        return prefix_result
+        return ""
+    strs.sort()
     for i in range(len(strs)):
         if strs[0][i] != strs[-1][i]:
             
