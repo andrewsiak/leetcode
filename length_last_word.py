@@ -1,6 +1,5 @@
 def lengthOfLastWord(s):
 
-    """This works, but did not achieve my goal of stripping all whitespace and is not very efficient"""
 
     # remove whitespace and tokenize string, originally used strip and split(" ") incorrectly
 
